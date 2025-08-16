@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Level 3</title>
+   </head>
+   <body>
+      <h3>Registration Form</h3>
+      <form action="\action.php">
+         <div>
+            <input
+               type="text"
+               name="first"
+               id="first"
+               placeholder="First Name"
+            />
+            <input type="text" name="last" id="last" placeholder="Last Name" />
+         </div>
+
+         <div>
+            <label for="gender">Please select gender:</label>
+            <select name="gender" id="gender">
+               <option selected value="male">Male</option>
+               <option value="female">Female</option>
+               <option value="other">Other</option>
+            </select>
+         </div>
+
+         <div>
+            Do you agree all of terms and condition?
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms">Yes, I'm agree</label>
+         </div>
+
+         <button type="submit">Register</button>
+      </form>
+   </body>
+</html>

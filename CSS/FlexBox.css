@@ -1,0 +1,103 @@
+/* Flex box -> It is an one dimensional layout method for arranging items in raw or column */
+#container {
+   height: 300px;
+   width: 80%;
+   background-color: azure;
+   margin: 10px auto;
+   border: 2px solid black;
+
+   /* Display flex -> It fit the all his child element into it's container, element will not overflow. It will ignore the initial height and width of the child element if it overflow the container */
+   display: flex;
+
+   /* flex direction -> it set the flex direction row wise and column wise */
+   flex-direction: column; /* main axis -> top to bottom */
+   flex-direction: column-reverse; /* main axis -> bottom to top */
+   flex-direction: row; /* main axis -> left to right */
+   flex-direction: row-reverse; /* main axis -> right to left */
+
+   /* Justify content -> It distribute space between items along main **axis, if space left in the container */
+   flex-direction: row;
+   justify-content: flex-start; /* It move all element toward starting point */
+   justify-content: flex-end; /* It move all element toward end point */
+   justify-content: center; /* It move all element into middle */
+
+   justify-content: space-between; /* It insert space between every items but start and end will have no spacing */
+   justify-content: space-around; /* It insert space between every items and start and end will have half of the items spacing */
+   justify-content: space-evenly; /* It insert space between every items and start and end will have equal of the items spacing */
+
+   /* Flex wrap -> we can unchanged the flex-items it's won height and width. It will move the items in the next line if it's not possible to contain in one line */
+   justify-content: flex-start;
+   flex-wrap: nowrap; /* no wrapping */
+   flex-wrap: wrap;
+   flex-wrap: wrap-reverse; /* it reverse the wrap along cross axis */
+
+   /* Align items -> Distribute items along the **cross axis, if space left in the container */
+   flex-direction: row;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+
+   align-items: flex-start; /* It move all element toward starting point of cross axis */
+   align-items: flex-end; /* It move all element toward starting point of cross axis */
+   align-items: center; /* It move all element toward middle point of cross axis */
+   align-items: baseline; /* It arrange items based on inside content in flex items */
+
+   /* Align content -> it works if we have multiple line */
+   align-content: flex-start; /* It move all element toward starting point of cross axis */
+   align-content: flex-end; /* It move all element toward starting point of cross axis */
+   align-content: center; /* It move all element toward middle point of cross axis */
+   align-content: baseline; /* It arrange items based on inside content in flex items */
+
+   align-content: space-between; /* It insert space between every items along cross-axis but start and end will have no space */
+   align-content: space-around; /* It insert space between every items along cross-axis and start and end will have half of the items space */
+   align-content: space-evenly; /* It insert space between every items along cross-axis and start and end will have equal of the items space */
+
+   /* align self -> align an individual flex-items along cross-axis. It can only over-write align-items not align-content */
+   flex-wrap: nowrap;
+   align-content: flex-start;
+   /* #org*/
+
+   /* Flex sizing -> we can fill up the extra space in our container by growing or shrinking the flex items */
+   /* #yellow */
+}
+
+#yellow {
+   /* flex basis -> it sets the initial main size of a flex item along main axis */
+   /* flex-basis: 200px; */
+
+   /* flex grow -> extend the size if we have space in container */
+   /* flex-grow: 2; */
+   /* we can limit the growth */
+   /* max-width: 200px;
+   min-width: 150px; */
+
+   /* flex shrink -> shrink the size if we need space in container */
+   /* flex-shrink: 2; */
+
+   /* flex shorthand */
+   flex: 2 2 100px; /* grow | shrink | basis */
+   flex: 2 100px; /* grow | basis */
+   flex: 2; /* grow */
+   flex: 100px; /* basis */
+}
+
+#org {
+   align-self: flex-start;
+   align-self: flex-end;
+   align-self: center;
+   align-self: baseline;
+
+   /* flex-grow: 1; */
+}
+
+h1 {
+   text-align: center;
+}
+
+#container div {
+   height: 50px;
+   width: 300px;
+   color: white;
+   text-align: center;
+   font-size: 1.5em;
+}
+

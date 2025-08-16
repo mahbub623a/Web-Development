@@ -1,0 +1,37 @@
+/* Media Query -> We can Customize based on display size */
+h1 {
+   background-color: yellow;
+   border: 2px solid black;
+}
+
+@media (width: 500px) {
+   h1 {
+      background-color: red;
+      color: white;
+   }
+   div {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+   }
+}
+
+@media (min-width: 700px) {
+   /* we can also use max-width */
+   h1 {
+      background-color: greenyellow;
+   }
+}
+@media (min-width: 200px) and (max-width: 300px) {
+   h1 {
+      background-color: magenta;
+   }
+}
+
+/* Media Query -> We can Customize based on orientation size */
+@media (orientation: landscape) {
+   h1 {
+      background-color: teal;
+      color: white;
+   }  
+}

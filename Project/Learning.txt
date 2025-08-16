@@ -1,0 +1,15 @@
+---------------- Mini project (CSS) ---------------
+1. Cursor -> change the cursor pointer
+2. Background position
+
+---------------- Spotify --------------------
+1. overflow -> Hide content if it  does'nt fit in container
+2. vh -> view port
+3. 1rem = 16px
+4. border = none
+5. fit-content -> fit the content withing it's width
+6. **Appearance -> remove all pre-define design of an element
+7. ** Slider details: https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html
+
+---------------- JavaScript (Min-Project) ----------------
+1. 

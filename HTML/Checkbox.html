@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Checkbox</title>
+   </head>
+   <body>
+      <form action="action.php">
+         <div>
+            <input type="checkbox" name="age" id="age" checked />
+            <label for="age">I'm 18+</label>
+
+            <input type="checkbox" name="condition" id="condition" />
+            <label for="condition">I agree</label>
+         </div>
+
+         <button type="submit">Submit</button>
+      </form>
+      <hr />
+
+      <!-- Grouped Checkbox -->
+      <form action="action.php">
+         <div>
+            <label>Choose your subject:</label>
+            <input type="checkbox" name="sub" id="english" value="english" />
+            <label for="english">English</label>
+
+            <input type="checkbox" name="sub" id="bangla" value="bangla" />
+            <label for="bangla">Bangla</label>
+
+            <input type="checkbox" name="sub" id="math" value="bangla" />
+            <label for="math">Math</label>
+         </div>
+         <button type="submit">Submit</button>
+      </form>
+   </body>
+</html>
+
+<!-- Using the same name attribute we can group a multiple checkboxes-->
+<!-- value attribute indicates which checkbox  I selected -->
+<!-- we can select all of checkbox -->

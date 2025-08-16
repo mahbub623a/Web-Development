@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Background Image</title>
+      <style>
+         /* we can set image as background */
+         div {
+            width: 400px;
+            height: 200px;
+            color: white;
+            background-color: #7aa874;
+            margin: 10px auto;
+            background-image: url("../Image/cat.jpg");
+
+            /* to fit the image to the element we can do contain, cover auto */
+
+            /* auto -> it will stress the the image to fit */
+            background-size: auto;
+
+            /* contain -> it will repeat the image */
+            background-size: contain;
+
+            /* cover -> it will crop the image to fit */
+            background-size: cover;
+
+            /* position -> we can set the position of image */
+            background-position: center;
+         }
+      </style>
+   </head>
+   <body>
+      <div>My box</div>
+   </body>
+</html>

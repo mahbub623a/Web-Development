@@ -1,0 +1,90 @@
+.container {
+   width: 600px;
+   height: 300px;
+   background-color: yellow;
+   margin: 0 auto;
+
+   /* Display Grid -> It is an two dimensional layout method for arranging items in raw or column */
+   display: grid; /* we can also use inline-grid to use as inline element */
+
+   /* Grid template  -> Use to define the grid line and track sizing using raw and column */
+   grid-template-rows: 50px 50px 50px 50px 50px; /* here 5 rows */
+   grid-template-columns: 200px 200px 200px; /* here 3 column */
+   /* we can use auto in size it will divide container in equal size,  some time it does'nt divide equally */
+   /* grid-template-columns: auto auto auto; */
+
+   /* Grid template repeat -> Repeat is use to divide all available space equally */
+   grid-template-rows: repeat(3, 1fr); /* 3 raw */
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: 1fr 1fr 1fr; /* another way of writing */
+
+   /* Grid gap -> we can maintain a gap between raw or column */
+   row-gap: 10px;
+   column-gap: 10px;
+   grid-gap: 15px 15px; /* raw gap | column gap */
+   grid-gap: 10px; /* raw gap & column gap */
+
+   /* Grid column -> we can place a items in multiple column */
+   /* .one */
+
+   /* Grid row -> we can place a items in multiple row  */
+   /* .two */
+
+   /* Justify items -> use to arrange item in horizontally */
+   justify-items: start;
+   justify-items: end;
+   justify-items: center;
+
+   /* justify self -> use to arrange an individual item in horizontally (main axis) */
+   /* one */
+
+   /* align items -> use to arrange item in vertically (cross axis) */
+   align-items: start;
+   align-items: end;
+   align-items: center;
+
+   /* align self -> use to arrange an individual item in vertically (cross axis) */
+   /* two */
+
+   /* place items -> horizontal + vertical */
+   place-items: end;
+
+   /* place self -> one */
+}
+.one {
+   grid-column-start: 1; /* line number */
+   grid-column-end: 3; /* line number */
+   grid-column: 1/4; /* shortcut -> star to end */
+   grid-column: 1 / span 3; /* start from one and span 3 column */
+
+   grid-column: 1/1;
+
+   justify-self: end;
+
+   place-self: start;
+}
+
+.two {
+   grid-row-start: 1; /* line number */
+   grid-row-end: 3; /* line number */
+   grid-row: 1/4; /* shortcut -> star to end */
+   grid-row: 1 / span 3; /* start from one and span 3 column */
+
+   grid-row: 2/2;
+   align-self: end;
+}
+
+.items {
+   /* If we don't give any heigh or width of items it will occupy whole space of grid box */
+
+   width: 100px;
+   height: 50px;
+
+   background-color: greenyellow;
+   border: 2px solid black;
+   text-align: center;
+}
+
+h1 {
+   text-align: center;
+}

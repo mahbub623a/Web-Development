@@ -1,0 +1,125 @@
+/* Universal selector -> select all of thing from the page */
+* {
+   font-family: "Courier New";
+}
+
+/* Element selector -> Select all element of the same type */
+h3 {
+   color: purple;
+}
+h1, /* we can use multiple element at once */
+h3 {
+   color: #b92b27;
+}
+
+/* Id selector -> select an element based on the value of the element's id attribute */
+#login {
+   background-color: white;
+}
+#signup {
+   background-color: #b92b27;
+   color: white;
+}
+
+/* Class selector -> select an element base on the value of the element's class attribute */
+/* We can group multiple element using class attribute */
+.upvote {
+   background-color: green;
+   color: aliceblue;
+}
+
+/* Descendant Selector -> select all the child which are same type and in the same level */
+/* Select a which is under p */
+p a {
+   color: white;
+   background-color: black;
+}
+/* we can also use class as parent */
+.post a {
+   color: purple;
+   background-color: yellow;
+}
+/* we can also use multi-level */
+nav ul li a {
+   color: hotpink;
+}
+
+/* Sibling combinator -> we can select an element that comes immediately after an element. They will be on the same level. They are not in parent child relationship */
+/* select h3 which comes immediately after p tag */
+p + h3 {
+   text-decoration: underline;
+}
+/* we can use it also for class */
+.upvote + button {
+   background-color: cornflowerblue;
+   color: darkslateblue;
+}
+
+/* Child combinator -> Select all tag which are "direct" child (not grand child) of another specific tag */
+div > input {
+   background-color: salmon;
+}
+
+/* Attribute selector -> select element based on the presence (present) or value of a given attribute */
+/* Using attribute value */
+input[type="text"] {
+   color: red;
+}
+input[type="password"] {
+   color: green;
+}
+/* Using attribute presence */
+input[type] {
+   font-size: large;
+}
+
+/* Pseudo class -> A keyword added to a selector that specifies a special state of the selected element */
+/* hover class */
+button:hover {
+   background-color: black;
+   color: white;
+}
+h3:hover {
+   text-decoration: overline;
+}
+
+/* active class */
+button:active {
+   background-color: hotpink;
+   color: black;
+}
+p:active {
+   font-weight: bold;
+   color: green;
+}
+
+/* checked */
+input[type="radio"]:checked + label {
+   color: red;
+   font-weight: bold;
+}
+
+/* nth-of-type(n) -> even -> 2n, odd -> 2n + 1 */
+div:nth-of-type(2n) {
+   background-color: blanchedalmond;
+}
+
+/* Pseudo elements -> A keyword added to a selector that lets you style a specific part of the selected element */
+h1::first-letter {
+   color: green;
+}
+p::first-line {
+   color: red;
+}
+p::selection {
+   background-color: yellow;
+}
+
+/* 
+   specificity ->
+   inline style > id > class + attribute + pseudo class > element + pseudo element
+   1000           100                10                             1
+
+   !important -> the most specific thing in the document
+*/
+

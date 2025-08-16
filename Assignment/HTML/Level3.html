@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Level 3</title>
+   </head>
+   <body>
+      <!-- Question 1 -->
+      <table border="black">
+         <caption>
+            Student Information
+         </caption>
+         <tr>
+            <th rowspan="5">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+         </tr>
+         <tr>
+            <th>City</th>
+            <th>House</th>
+         </tr>
+
+         <tr>
+            <td>Mahbub</td>
+            <td>Pabna</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>Tamanna</td>
+            <td>Pabna</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>Jane</td>
+            <td>Dhaka</td>
+            <td>3</td>
+         </tr>
+      </table>
+      <hr />
+      <br />
+
+      <!-- Question 2 -->
+      <form action="\action.php">
+         <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your name" />
+         </div>
+
+         <div>
+            Sex:
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+         </div>
+
+         <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+               <option>Select An option</option>
+               <option value="BD">Bangladesh</option>
+               <option value="us">United States</option>
+               <option value="uk">United Kingdom</option>
+            </select>
+         </div>
+
+         <div>
+            <label for="message">Message:</label><br />
+            <textarea name="message" id="message" cols="30" rows="4"></textarea>
+         </div>
+
+         <div>
+            <input type="checkbox" name="subs" id="subs" />
+            <label for="subs">Subscribe?</label>
+         </div>
+
+         <button type="submit">Submit</button>
+      </form>
+      <hr />
+      <br />
+
+      <form action="\action.php">
+         <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+         </div>
+
+         <div>
+            <label for="massage">Massage:</label><br />
+            <textarea name="massage" id="massage" cols="30" rows="4"></textarea>
+         </div>
+
+         <div>
+            <label for="">Rate us out of 5:</label><br />
+            <input type="radio" name="rating" id="one" value="one" />
+            <label for="one">1</label><br />
+
+            <input type="radio" name="rating" id="two" value="two" />
+            <label for="two">2</label><br />
+
+            <input type="radio" name="rating" id="three" value="three" />
+            <label for="three">3</label><br />
+
+            <input type="radio" name="rating" id="four" value="four" />
+            <label for="four">4</label><br />
+
+            <input type="radio" name="rating" id="five" value="five" />
+            <label for="five">5</label><br />
+         </div>
+         <button type="submit">Send your massage</button>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Opacity</title>
+      <style>
+         #alpha {
+            /* Alpha channel -> we can control color opacity of any element, it will affect only color of that element */
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255, 0, 0, 1);
+            background-color: #4dff00a1; /* we can use hex-code also, range: 00-ff */
+         }
+
+         /* Opacity -> we can set opacity for any element, it will affect direct on element */
+         #opacity {
+            height: 200px;
+            width: 200px;
+            background-color: #ffa511;
+            opacity: 0.5;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="alpha">
+         <h3>Heading</h3>
+      </div>
+
+      <div id="opacity">
+         <h3>Heading</h3>
+         <button>click me</button>
+      </div>
+   </body>
+</html>

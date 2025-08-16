@@ -1,0 +1,20 @@
+.box {
+   height: 150px;
+   width: 150px;
+   border: 2px solid black;
+   background-color: pink;
+}
+
+/* z index -> we can maintain overlap of an element, it only work which have position property (without static), bigger value means it will appear in upper */
+
+.one {
+   background-color: aquamarine;
+   position: relative;
+   z-index: 2;
+}
+.two {
+   background-color: darksalmon;
+   position: relative;
+   bottom: 50px;
+   z-index: 1;
+}

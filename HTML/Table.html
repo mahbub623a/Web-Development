@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Table</title>
+   </head>
+   <body>
+      <table border="black">
+         <caption>
+            Food Menu
+         </caption>
+         <thead>
+            <tr>
+               <th>Item</th>
+               <th>Price</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+               <td>Mango</td>
+               <td>10</td>
+            </tr>
+
+            <tr>
+               <td>Banana</td>
+               <td>20</td>
+            </tr>
+
+            <tr>
+               <td>Orange</td>
+               <td>30</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+               <td>Sum</td>
+               <td>60</td>
+            </tr>
+         </tfoot>
+      </table>
+
+      <hr />
+      <!-- Rowspan && colspan-->
+      <table border="black">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Items</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>BDT</th>
+                <th>US</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mango</td>
+                <td>20</td>
+                <td>0.1</td>
+            </tr>
+
+            <tr>
+                <td>Orange</td>
+                <td>30</td>
+                <td>0.3</td>
+            </tr>
+
+            <tr>
+                <td>Banana</td>
+                <td>20</td>
+                <td>0.2</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Sum</th>
+                <th>70</th>
+                <th>0.6</th>
+            </tr>
+        </tfoot>
+      </table>
+   </body>
+</html>

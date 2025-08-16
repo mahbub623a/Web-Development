@@ -1,0 +1,54 @@
+div {
+   /* Height & width */
+   height: 200px;
+   width: 500px;
+   background-color: pink;
+
+   /* Border */
+   border-width: 5px;
+   border-style: solid;
+   border-color: black;
+   border: 5px solid yellow; /* shorthand */
+   
+   /* Border sides -> we can use left, right, top, bottom */
+   border-left-color: blue;
+   border-left-style: dashed;
+   border-top: 5px dashed blue;
+
+   /* Border radius -> use mdn to more style */
+   border: 5px solid black;
+   border-radius: 15px;
+   border-top-right-radius: 50px; /* we can control individual sides of border */
+   border-bottom-left-radius: 50px;
+
+   /* Padding -> we can use right, left, top, bottom */
+   padding-top: 10px;
+
+   /* shorthand */
+   padding: 20px; /* left+right+top+bottom */
+   padding: 10px 20px; /* top+bottom | left+right */
+   padding: 10px 20px 15px; /* top | left+right | bottom */
+   padding: 20px 20px 20px 20px; /* top | right | bottom | left */
+   padding: 0;
+
+   /* Margin -> we can use right, left, top, bottom */
+   margin-bottom: 20px;
+
+   /* shorthand */
+   margin: 20px; /* left+right+top+bottom */
+   margin: 10px 20px; /* top+bottom | left+right */
+   margin: 10px 20px 15px; /* top | left+right | bottom */
+   margin: 20px 20px 20px 20px; /* top | right | bottom | left */
+}
+
+h1 {
+   border: 2px dashed green;
+   margin: 0; /* we can unset margin */
+}
+
+button {
+   border: 2px solid black;
+   border-radius: 10px;
+   padding-left: 25px;
+   padding-right: 25px;
+}

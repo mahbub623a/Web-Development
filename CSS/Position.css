@@ -1,0 +1,50 @@
+/* Position -> we can set position for an element in our document */
+div {
+   height: 100px;
+   width: 100px;
+   background-color: green;
+   text-align: center;
+   border: 3px solid black;
+   margin: 20px;
+   display: inline-block;
+}
+
+/* static -> we can not change the the position because static means we set it to default */
+#static {
+   background-color: yellow;
+   position: static;
+   top: 100px; /* no effect  */
+   left: 100px; /* no effect  */
+}
+
+/* Relative -> It change the position related to it's current position, and its initial position will have still spacing */
+#relative {
+   background-color: yellow;
+   position: relative;
+   top: 100px;
+   left: 100px;
+}
+
+/* Absolute -> It change the position related to it's ancestor if the ancestor have given any position property else initial containing block(body), and its initial position will have no spacing */
+#absolute {
+   background-color: yellow;
+   position: absolute;
+   top: 100px;
+   left: 100px;
+}
+
+/* Fixed (Important): It change the position related to initial containing block(body) restriction in some cases(mdn). and it always fixed in the screen. its initial position will have no spacing */
+#fixed {
+   background-color: yellow;
+   position: fixed;
+   top: 100px;
+   left: 100px;
+}
+
+/* sticky -> It will scroll and  stick in given position (mdn)  */
+#stick {
+   color: white;
+   background-color: teal;
+   position: sticky;
+   top: 5px;
+}

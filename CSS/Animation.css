@@ -1,0 +1,76 @@
+.box {
+   height: 100px;
+   width: 300px;
+   background-color: pink;
+
+   /* Animation -> use to animate something */
+   animation-name: widthAnimation; /* name of animation */
+   animation-duration: 2s; /* Time for animation */
+   animation-timing-function: ease-in;
+   animation-delay: 0s; /* Delay */
+   animation-iteration-count: 3; /* how many time we want to animate */
+   animation-direction: normal;
+
+   /* shorthand -> name | duration | timing-function | delay | count | direction */
+   animation: multiAnimation 3s ease-in 0s infinite normal;
+
+   /* we can also maintain different stage */
+   animation: stageAnimation 5s ease-in 0s 1 normal;
+}
+
+@keyframes stageAnimation {
+   0% {
+      background-color: red;
+   }
+   25% {
+      background-color: blue;
+   }
+   50% {
+      background-color: green;
+   }
+   75% {
+      background-color: yellow;
+   }
+   100% {
+      background-color: black;
+   }
+}
+
+/* Template for animation */
+@keyframes widthAnimation {
+   from {
+      width: 10px;
+   }
+   to {
+      width: 400px;
+   }
+}
+@keyframes fontAnimation {
+   from {
+      font-size: 20px;
+   }
+   to {
+      font-size: 40px;
+   }
+}
+@keyframes colorAnimation {
+   from {
+      background-color: green;
+   }
+   to {
+      background-color: blue;
+   }
+}
+
+/* Multifunctional animation */
+@keyframes multiAnimation {
+   from {
+      width: 10px;
+      background-color: green;
+   }
+   to {
+      width: 400px;
+      background-color: blue;
+      border-radius: 20px;
+   }
+}

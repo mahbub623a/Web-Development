@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Units</title>
+      <style>
+         /* Percentage -> It is use to define a size as relative to an element's parent size */
+         h1 {
+            /* changing width according to body element */
+            border: 2px solid black;
+            width: 33.3%;
+         }
+
+         #outer {
+            background-color: pink;
+            height: 400px;
+            width: 400px;
+            margin: 50px;
+         }
+         #inner {
+            background-color: cornflowerblue;
+            height: 100px;
+            width: 100px;
+            margin-left: 10%; /* margin will apply base on outer div size */
+         }
+
+         /* Em -> It is use to define a font-size as relative to an element's parent's font-size,
+         we can also define padding, margin based on itself's font size */
+         #out {
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: pink;
+            font-size: 20px;
+         }
+         #in {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+            font-size: 1.5em; /* changing  size base on out's font-size */
+            padding: 1em; /* changing  padding base on it's font-size */
+         }
+
+         /* Rem -> it change size base on root elements's font-size */
+         section {
+            font-size: 25px;
+         }
+         section div {
+            font-size: 1.5rem; /* changing  font-size base on section's font-size */
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Heading</h1>
+
+      <div id="outer">
+         <div id="inner"></div>
+      </div>
+
+      <div id="out">
+         This is outer
+         <div id="in">This is inner</div>
+      </div>
+
+      <section>
+         section
+         <div>
+            div 1
+            <div>
+               div 2
+               <div>div 3</div>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+---- Basic ----
+ls = list files --> show my files
+pwd = print working directory --> where am i?
+clear = Clear Screen
+cd = change directory
+    cd Desktop = go to
+    cd .. = back button
+mkdir name = make directory
+man ls -> give info about ls command
+man mkdir -> give info about mkdir command
+ls -l -> show additional information about files
+ls -a -> show all file including hidden file
+touch name -> use to create different files
+rm name -> removes files
+rmdir name -> removes empty folders
+rm -rf name -> removes any folders
+
+
+
+---- Symbol ----
+~ -> home directory
+/ -> root directory

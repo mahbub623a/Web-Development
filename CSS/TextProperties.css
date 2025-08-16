@@ -1,0 +1,43 @@
+h1 {
+   /* we can place text at left(start), center and right(end) */
+   text-align: center; /* Related to it's parent element */
+
+   /* we can change boldness from light to deep and vice versa */
+   font-weight: bold; /* 100......900 & normal, bold */
+
+   /* we can decorate underline, overline and line through */
+   text-decoration: underline;
+   text-decoration: red underline; /* we can change color */
+   text-decoration: wavy blue underline; /* we can change it to wave, double underline, dash, dotted, */
+
+   /* we can increase and decrease line height in vertically*/
+   line-height: 0.5; /* equation: value * normal  */
+
+   /* we can increase/decrease horizontal spacing using */
+   letter-spacing: 10px;
+
+   /* we can adjust font size of any text */
+   font-size: 50px;
+
+   /* we can change font styling */
+   font-family: papyrus;
+   font-family: didot, sans-serif; /* we can set multiple font-family with the priorities */
+}
+h3 {
+   text-align: end;
+   text-decoration: pink line-through;
+}
+h2 {
+   font-weight: normal;
+   text-decoration: double overline;
+}
+p {
+   /* align text equally from both side */
+   text-align: justify;
+
+   line-height: 2.5; /* value * normal */
+}
+a {
+   /* we can unset underline */
+   text-decoration: unset;
+}
