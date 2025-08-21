@@ -24,11 +24,30 @@
     git remote add origin lik -> add current repo to the github
     git remote -v -> to verify remote
 
-7. 
-
+7.  Branching in github 
     git branch -> to check branch
     git branch -M main -> to rename branch
+    git checkout branch-name -> to navigate in branch
+    git checkout -b branch-name -> to create new branch
+    git branch -d branch-name -> to delete branch
 
+8. Merging Branch 
+    git diff branch-name -> to compare commits, branches, files & more
+    git merge branch-name -> to merge 2 branches or do it manually from github
 
-start with workflow
+9. Fixing mistake
+    Case 1 : staged changes
+        git reset file-name -> for single file 
+        git reset -> for all file
+
+    Case 2 : committed changes (for one commit)
+        git reset HEAD~1
+        
+    Case 3 : committed changes (for many commits)
+        git reset commit hash 
+        git reset --hard commit hash
+    
+10. What is Forking?
+    A fork is a new repository that shares code and visibility settings with the original "upstream" repository.
+    Fork is a rough copy.
 
