@@ -1,8 +1,0 @@
-Node.js -> JavaScript Runtime Environment. Give capability to run JavaScript outside the browser
-It is used for server side programming.
-*Node.js is not a language, library or framework. It's a runtime environment
-
-REPL
-Full form -> Read, Evaluate, Print, Loop
-To activate REPL we write node in cmd
-

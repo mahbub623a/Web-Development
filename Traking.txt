@@ -120,8 +120,3 @@
 ------------------------- Git and Github -----------------------------
 1. README.md
 2. Command.txt
-
-------------------------- NodeJs -----------------------------
-1. Node.txt
-2. Process
-3. Module | connect with math.js and Fruits
