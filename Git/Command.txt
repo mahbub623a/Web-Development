@@ -36,7 +36,7 @@
     git merge branch-name -> to merge 2 branches or do it manually from github
 
 9. Fixing mistake
-    Case 1 : staged changes
+    Case 1 : staged changes -> wrong add
         git reset file-name -> for single file 
         git reset -> for all file
 
@@ -50,4 +50,5 @@
 10. What is Forking?
     A fork is a new repository that shares code and visibility settings with the original "upstream" repository.
     Fork is a rough copy.
+    -> Basically we make a copy of others repo on our github to contribute others projects. Then we create pull request to merge with their main repo.
 
