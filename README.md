@@ -160,6 +160,7 @@
 <summary>📂 Node.js</summary>
 
 1. node.js
-2. Process (start)
+2. Process
+3. Export : start with video 8. Export in directories
 
 </details>
