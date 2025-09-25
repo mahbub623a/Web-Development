@@ -161,6 +161,9 @@
 
 1. node.js
 2. Process
-3. Export : start with video 8. Export in directories
+3. Export, math.js
+4. Export2, Fruits dir
+5. NPM, Figlet dir
+6. Import (directory)
 
 </details>
