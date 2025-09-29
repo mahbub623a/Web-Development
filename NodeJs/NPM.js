@@ -9,7 +9,7 @@
 // how to use figlet -> create a index.js file in FigletDir(where package are installed)
 
 // when we install any package we got there things -> node_modules, package.json, package-lock.json
-// 1. node_modules The node_modules folder contains every installed dependency for our project.
+// 1. node_modules -> The node_modules folder contains every installed dependency for our project.
 // 2. package-lock.json ->  It records the exact version of every installed dependency, including its sub-dependencies and their versions.
 // 3. package.json -> The package.json file contains descriptive and functional metadata about a project, such as a name, version, and dependencies
 //      if we want to send the project to someone(or upload project in github) we don't need to send node_modules or package-lock.json. we simple can send package.json. using this someone can install all needed package or somethings.
