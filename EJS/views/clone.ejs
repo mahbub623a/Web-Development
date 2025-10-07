@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        
+        .users{
+            display: flex;
+            gap: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Instagram</h1>
+    <h1>This page belongs to @<%= data.name %>
+    </h1>
+    <p>Follower: <%= data.followers %> &nbsp; &nbsp; &nbsp;
+            Follower: <%= data.following %>
+    </p>
+    <hr>
+    <div class="users">
+    <% for (let post of data.posts) {%>
+        <div>
+            <img src="<%= post.image %>" alt="some Image">
+            <p>Likes: <%= post.likes %> &nbsp; comments: <%= post.comments %>
+            </div>
+     <% } %>
+    </div>
+
+
+    <!-- sub template: we can add a sub part of the code using include -->
+    <!-- use "-" in syntax -->
+    <%- include("footer.ejs") %>
+
+</body>
+
+</html>
