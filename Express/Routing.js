@@ -8,7 +8,7 @@ app.listen(port, () => {
 
 // Routing -> it is process of selecting a path for traffic in a network or between or across multiple networks.
 // when we are sending request we can specify the exact path instead of whole network. we can send different request to different path.
-// app.use can'nt differentiate the route it send request to the whole network. 
+// app.use can'nt differentiate the route it received request to the whole network. 
 
 // we need app.get but it handles only GET request
 app.get("/", (req, res) => {

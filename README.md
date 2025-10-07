@@ -178,3 +178,13 @@
 5. Query String
 
 </details>
+
+<details>
+<summary>📂 EJS </summary>
+
+1. Templating
+2. index.js
+3. Interpolation Syntax
+4. database
+
+</details>
