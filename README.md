@@ -188,3 +188,11 @@
 4. database
 
 </details>
+
+<details>
+<summary>📂 Miscellaneous </summary>
+
+1. Get&Post.js
+2. start with video (03. Revisiting JS (OOPS))
+
+</details>

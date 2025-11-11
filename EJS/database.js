@@ -18,4 +18,4 @@ app.get("/ig/:username", (req, res) => {
     else res.send("<h1> No account found </h1>");
 });
 
-// use of sub-template : clone.ejs
+// use of sub-template, see clone.ejs pages
