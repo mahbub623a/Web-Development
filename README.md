@@ -194,5 +194,7 @@
 
 1. Get&Post.js
 2. Object prototype
+3. Factory Functions
+4. Class
 
 </details>

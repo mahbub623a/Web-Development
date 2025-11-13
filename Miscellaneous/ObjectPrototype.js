@@ -7,7 +7,7 @@
     GPT Response:
     Every JavaScript object has a hidden link to another object called its prototype.
 
-    That prototype object acts like a blueprint — it defines shared methods and properties that the original object can "inherit". It's not a actual property of that(our created) object. It reduce memory load instead of creating each functionality for individual object. it just inherit.
+    That prototype object acts like a blueprint — it defines shared methods and properties that the original object can "inherit". It's not a actual property of our created object. It reduce memory load instead of creating each functionality for individual object. it just inherit.
  
     reminder: array is a object in javascript
  */
@@ -29,8 +29,8 @@ console.log(arr); // we can use this name and sayHello function using this array
 // if we create one more array like arr2 = [4, 5, 6]. we wil not have the name & sayHello property in it.
 // If we need some modification or we want to add(like name & sayHello) some property for each object, we can add this to the "prototype" object. Our created object will inherit this.
 
-// we can access prototype in many way
-// 1. by reference -> Only the objet we have crated (here arr). It will work for only created object
+// we can access prototype in two ways
+// 1. By reference -> Only the objet we have crated (here arr). It will work for only created object
 console.log(arr.__proto__);
 
 // modification in build-in function
@@ -61,4 +61,5 @@ console.log(String.prototype);
 String.prototype.toUpperCase = () => {
     console.log("Fuck off bra");
 }
-"Mahbub".toUpperCase();
+let myName = "Mahbub";
+myName.toUpperCase();
