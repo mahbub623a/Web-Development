@@ -1,8 +1,4 @@
-# 🌐 Web Development Path
-## Md. Mahbubur Rahman
-
-<details>
-<summary>📂 HTML</summary>
+---- HTML ----
 
 1. Hello World  
 2. Paragraph  
@@ -30,10 +26,7 @@
 24. Range Input  
 25. Text Area  
 
-</details>
-
-<details>
-<summary>📂 CSS</summary>
+---- CSS ----
 
 1. Color: Text & Background  
 2. Color System  
@@ -58,10 +51,7 @@
 21. Pet Adoption Page  
 22. Z-Index  
 
-</details>
-
-<details>
-<summary>📂 Bootstrap</summary>
+---- Bootstrap ---- 
 
 1. Link  
 2. Container  
@@ -75,10 +65,7 @@
 10. Grid Vertical Alignment  
 11. Forms  
 
-</details>
-
-<details>
-<summary>📂 JavaScript – Language</summary>
+---- JavaScript – Language ----
 
 1. Variable  
 2. Data Types  
@@ -106,10 +93,7 @@
 24. Array Methods 2  
 25. Destructuring  
 
-</details>
-
-<details>
-<summary>📂 JavaScript – Advanced</summary>
+---- JavaScript – Advanced ----
 
 1. Select Element  
 2. DOM Properties  
@@ -124,10 +108,7 @@
 11. Promises  
 12. Async Function  
 
-</details>
-
-<details>
-<summary>📂 API</summary>
+---- API ----
 
 1. JSON  
 2. Status Codes & HTTP Verbs  
@@ -138,26 +119,17 @@
 7. Sending Headers  
 8. Query String  
 
-</details>
-
-<details>
-<summary>📂 Terminal</summary>
+---- Terminal ----
 
 1. Terms  
 2. Commands  
 
-</details>
-
-<details>
-<summary>📂 Git & GitHub</summary>
+---- Git & GitHub ----
 
 1. README.md  
 2. Commands  
 
-</details>
-
-<details>
-<summary>📂 Node.js</summary>
+---- Node.js ----
 
 1. node.js
 2. Process
@@ -166,10 +138,7 @@
 5. NPM, Figlet dir
 6. Import (directory)
 
-</details>
-
-<details>
-<summary>📂 Express </summary>
+---- Express ----
 
 1. Express.js
 2. index.js 
@@ -177,24 +146,21 @@
 4. Path parameter
 5. Query String
 
-</details>
-
-<details>
-<summary>📂 EJS </summary>
+---- EJS ----
 
 1. Templating
 2. index.js
 3. Interpolation Syntax
 4. database
 
-</details>
-
-<details>
-<summary>📂 Miscellaneous </summary>
+---- Miscellaneous ----
 
 1. Get&Post.js
 2. Object prototype
 3. Factory Functions
 4. Class
 
-</details>
+---- REST ----
+
+1. 
+
