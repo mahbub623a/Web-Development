@@ -1,4 +1,4 @@
-// OOPS -> Use to optimize memory and increase usability of code. It gives us blueprint to create same type fo code.
+// Concept of OOPS -> Use to optimize memory and increase usability of code. It gives us blueprint to create same type fo code.
 
 // Object prototype -> Prototypes are the mechanism by which JavaScript objects inherit features from one another. It is like a single template object that all objects inherit methods and properties from without having their own copy.
 // ** Every object in JavaScript has a built-in property, which is called its prototype.
@@ -30,7 +30,8 @@ console.log(arr); // we can use this name and sayHello function using this array
 // If we need some modification or we want to add(like name & sayHello) some property for each object, we can add this to the "prototype" object. Our created object will inherit this.
 
 // we can access prototype in two ways
-// 1. By reference -> Only the objet we have crated (here arr). It will work for only created object
+// 1. By reference -> We can access prototype using __proto__ property of any object by reference.
+// arr.__proto__ gives us the prototype object of array
 console.log(arr.__proto__);
 
 // modification in build-in function
@@ -48,7 +49,7 @@ Array.prototype.pop = () => {
     console.log("Vag vosdike");
 }
 let mah = [10, 20, 30];
-mah.pop(); // vag vosdike.(it will not remove the array element)
+mah.pop(); // vag vosdike
 arr.pop(); // vag vosdike
 
 // adding new property
