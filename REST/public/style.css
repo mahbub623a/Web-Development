@@ -1,0 +1,53 @@
+h1{
+    color: maroon;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+
+.post{
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    /* content will hide if get overflow */
+    overflow-wrap: break-word;
+}
+
+.user{
+    font-style: italic;
+}
+
+.links{
+    display: flex;
+    justify-content:space-around;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 + div{
+    /* text-align: end; */
+    padding-left: 102px;
+    padding-bottom: 10px;
+}
+h1 + div a {
+    text-decoration: none;
+    color: rebeccapurple;
+    font-weight: bold;
+
+}
+
+.btn{
+    border: none;
+    cursor: pointer;
+    background-color: blanchedalmond;
+}

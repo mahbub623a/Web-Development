@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Facebook Post</h1>
+    <div><a href="http://localhost:8080/posts/new">Create Posts</a></div>
+    <div class="main">
+        <% for(post of posts) { %>
+            <div class="post">
+                <h3 class="user">@<%= post.username %>
+                </h3>
+                <h4 class="content">
+                    <%= post.content %>
+                </h4>
+                <div class="links">
+                    <a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a>
+                    <a href="http://localhost:8080/posts/<%= post.id %>">view</a>
+                    <form action="/posts/<%= post.id %>?_method=DELETE" method="post">
+                        <button class="btn">Delete</button>
+                    </form>
+                </div>
+            </div>
+
+            <% } %>
+    </div>
+</body>
+
+</html>
